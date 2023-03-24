@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Описание{% endblock %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% block information %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Описание</h1>
+    <p class="lead">Веб-приложение-генератор стихов, основанных на творчестве Михаила Юрьевича Лермонтова.
+                    Принцип работы основан на «Цепях Маркова»<br><br>
+                    
+                     <b>Ключевые разделы проекта:</b><br>
+                     1. Алгоритм, загружающий из веб-сайта стихи Михаила Юрьевича для последующей генерации<br>
+                     2. Создание веб-сайта с меню, главной страницей, описанием. И генерируемыми стихами!<br>
+                     3. Создание генератора<br><br>
+
+                     <b>Загрузка стихов</b><br>
+                     Веб-сайт: https://rustih.ru/mixail-lermontov/<br>
+                     (Загрузка происходит через GetLyrics.py) — стихи + стихи без лишних знаков препинания<br><br>
+                     
+                     <b>Создание веб-сайта</b><br>
+                     Первая страница: генератор стихов<br>
+                     Вторая страница: описание проекта
+                     <br><br>
+                    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="static/images/Lermontov.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Стихи</h5>
+        <p class="card-text">Стихи для генерации с веб-сайта.</p>
+        <a href="https://rustih.ru/mixail-lermontov/" target="popup" class="btn btn-primary">Ресурс</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="static/images/flask.png" class="card-img-top" alt="...">
+    </div>
+  </div>
+  
+</div>
+{% endblock %}

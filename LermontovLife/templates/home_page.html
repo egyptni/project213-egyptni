@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Главная Страница{% endblock %}
+
+{% block code %}
+         $(function() {
+          $('a#process_input').bind('click', function() {
+            $.getJSON('/_background_process', {
+                order: $('input[name="order"]').val()
+            }, function(data) {
+              $("#result1").text(data.result[0]);
+              $("#result2").text(data.result[1]);
+              $("#result3").text(data.result[2]);
+              $("#result4").text(data.result[3]);
+              
+              $("#result5").text(data.result[4]);
+              $("#result6").text(data.result[5]);
+              $("#result7").text(data.result[6]);
+              $("#result8").text(data.result[7]);
+              
+              $("#result9").text(data.result[8]);
+              $("#result10").text(data.result[9]);
+            });
+            return false;
+          });
+        });
+{% endblock %}
+
+
+<p>Hello</p>
+{% block information %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Сгенерировать стих</h1>
+    <p class="lead">Выберите число от 2 до 6.
+                    Чем больше число, тем больше стих будет похож по стилю на Лермонтова.
+                    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="input-group mb-3" style="margin: auto">
+    <div class="input-group-prepend">
+        <a href ="#" id="process_input"><button class="btn btn-outline-secondary">Генерировать</button></a>
+    </div>
+    <div>
+        <input type="number" step="1" min=2 max=6 id="order_input" name="order" class="form-control" aria-label="Text input with segmented dropdown button">
+    </div>
+</div>
+
+<p class="finalResult" id="result1"></p>
+<p class="finalResult" id="result2"></p>
+<p class="finalResult" id="result3"></p>
+<p class="finalResult" id="result4"></p>
+
+<p class="space" id="__________"></p>
+
+<p class="finalResult" id="result5"></p>
+<p class="finalResult" id="result6"></p>
+<p class="finalResult" id="result7"></p>
+<p class="finalResult" id="result8"></p>
+
+<p class="space" id="__________"></p>
+
+<p class="finalResult" id="result9"></p>
+<p class="finalResult" id="result10"></p>
+
+{% endblock %}
