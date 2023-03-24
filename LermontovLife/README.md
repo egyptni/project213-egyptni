@@ -25,12 +25,12 @@
 Вторая страница: описание проекта
 
 Главная страница:
-![](https://github.com/?raw=true "CleanMainPage")
+![](https://github.com/hse-ling-python/project-213-egyptni/blob/main/LermontovLife/VisualExamples/MainPage_Clean.png?raw=true "CleanMainPage")
 
 Главная страница и сгенерированный стих:
-![](https://github.com/?raw=true "PopulatedMainPage")
+![](https://github.com/hse-ling-python/project-213-egyptni/blob/main/LermontovLife/VisualExamples/MainPage_Example.png?raw=true "PopulatedMainPage")
 
 Описание:
 
-![](https://github.com/?raw=true "DescriptionPage_1")
-![](https://github.com/?raw=true "DescriptionPage_2")
+![](https://github.com/hse-ling-python/project-213-egyptni/blob/main/LermontovLife/VisualExamples/DescriptionPage_1.png?raw=true "DescriptionPage_1")
+![](https://github.com/hse-ling-python/project-213-egyptni/blob/main/LermontovLife/VisualExamples/DescriptionPage_2.png?raw=true "DescriptionPage_2")
